@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Sultan Zafar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Contact Page Layout */
+        .contact-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            gap: 40px;
+        }
+
+        .left-column {
+            flex: 2;
+        }
+
+        .right-column {
+            flex: 1;
+            text-align: center;
+        }
+
+        .portrait {
+            width: 260px;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .contact-buttons a {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            background: #003366;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .contact-buttons a.whatsapp {
+            background: #25D366;
+        }
+
+        .brokerage-logo {
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .form-wrapper {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.08);
+        }
+
+        iframe {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 900px) {
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER (MATCHES INDEX PAGE EXACTLY) -->
+<header>
+    <img src="assets/homelife_logo.png" alt="Homelife Diamonds Realty Logo">
+    <h1>Sultan Zafar – Sales Representative</h1>
+</header>
+
+<!-- BANNER (MATCHES INDEX PAGE) -->
+<div class="banner">
+    <img src="assets/house-banner.jpg" alt="House Banner">
+    <div class="banner-text">
+        <h2>“My mission is to Educate my Clients about Real Estate, create a Plan and Negotiate for them, with Simplicity and Trust.”</h2>
+        <p>— Sultan Zafar</p>
+    </div>
+</div>
+
+<!-- NAVIGATION MENU (MATCHES INDEX PAGE) -->
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="buying.html">Buying</a>
+    <a href="selling.html">Selling</a>
+    <a href="terms.html">Real Estate Terms</a>
+    <a href="news.html">News</a>
+    <a href="contact.html" style="color:#ffcc00;">Contact Us</a>
+</nav>
+
+<!-- CONTACT CONTENT -->
+<div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-column">
+        <h1>Contact Me</h1>
+        <p>Have questions about buying or selling a home?  
+           Send me a message using the form below — I’ll get back to you as soon as possible.</p>
+
+        <div class="form-wrapper">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfAp4pkNGGziczo9-8WNIPYwXG9Jv77muJ3y6s8k5WpTzPNYw/viewform?embedded=true"
+                height="1200"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0">
+                Loading…
+            </iframe>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-column">
+        <img src="assets/sultan-portrait.jpg" class="portrait" alt="Sultan Zafar">
+
+        <div class="contact-buttons">
+            <a href="tel:14378087498">Call or Text Me</a>
+            <a href="https://wa.me/14378087498" class="whatsapp">WhatsApp Me</a>
+        </div>
+
+        <img src="assets/homelife_logo.png" alt="Homelife Diamonds Realty Inc." class="brokerage-logo">
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <img src="assets/homelife_logo.png" alt="Homelife Diamonds Realty">
+    <p>Homelife Diamonds Realty Inc., Brokerage</p>
+    <p>30 Intermodal Drive, Suite 207, Brampton ON L6T 5K1</p>
+    <p>Office: 905-789-7777 | Fax: 905-789-0000</p>
+    <p>© 2026 Sultan Zafar</p>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-buttons">
+    <a href="https://wa.me/14378087498" class="float-btn">WhatsApp</a>
+    <a href="tel:4378087498" class="float-btn call">Call Me</a>
+</div>
+
+</body>
+</html>
