@@ -3,132 +3,103 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sultan Dashboard</title>
+    <title>Sultan's Links</title>
 
     <style>
-
-        /* =========================================
-           PAGE
-        ========================================= */
 
         * {
             box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-            background: #ffffff;
+            padding: 18px 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1.35;
+            background-color: white;
+            color: #000;
         }
-
-
-        /* =========================================
-           MAIN 5-COLUMN LAYOUT
-        ========================================= */
 
         .columns {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 35px;
-            align-items: start;
+            column-count: 5;
+            column-gap: 28px;
         }
-
-
-        /* =========================================
-           EACH CATEGORY
-        ========================================= */
 
         .category {
+            display: inline-block;
+            width: 100%;
             break-inside: avoid;
             page-break-inside: avoid;
+            margin: 0 0 18px 0;
         }
-
-
-        /* =========================================
-           HEADINGS
-        ========================================= */
 
         h2 {
-            margin-top: 0;
-            margin-bottom: 12px;
-            font-size: 22px;
-            font-weight: bold;
+            margin: 0 0 5px 0;
+            padding: 0;
+            font-size: 19px;
+            line-height: 1.2;
+            color: #000080;
         }
-
-
-        /* =========================================
-           LINKS
-        ========================================= */
 
         a {
             display: block;
-            margin-left: 20px;
-            margin-bottom: 3px;
-            text-decoration: none;
+            margin: 0 0 2px 10px;
+            padding: 0;
             color: #006600;
+            text-decoration: none;
+            line-height: 1.3;
         }
-
-
-        /* Keep the existing hover effect */
 
         a:hover {
             text-decoration: underline;
+            color: #cc0000;
         }
 
 
-        /* =========================================
-           TABLET
-        ========================================= */
+        /* -----------------------------
+           RESPONSIVE COLUMNS
+        ------------------------------ */
 
         @media (max-width: 1200px) {
 
             .columns {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 30px;
+                column-count: 4;
             }
 
         }
 
 
-        /* =========================================
-           SMALL TABLET
-        ========================================= */
-
-        @media (max-width: 800px) {
+        @media (max-width: 1000px) {
 
             .columns {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 25px;
+                column-count: 3;
             }
 
         }
 
 
-        /* =========================================
-           MOBILE
-        ========================================= */
-
-        @media (max-width: 600px) {
+        @media (max-width: 750px) {
 
             body {
                 padding: 15px;
             }
 
             .columns {
-                grid-template-columns: 1fr;
-                gap: 25px;
+                column-count: 2;
+                column-gap: 20px;
             }
 
-            h2 {
-                font-size: 21px;
-            }
+        }
 
-            a {
-                margin-left: 10px;
+
+        @media (max-width: 500px) {
+
+            .columns {
+                column-count: 1;
             }
 
         }
@@ -140,509 +111,668 @@
 
 <body>
 
-
 <div class="columns">
 
 
-    <!-- =========================================
+    <!-- ========================================
          ISLAM
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Islam (Peace)</h2>
 
         <a href="https://openquran.com/">Quran Search</a>
+
         <a href="http://www.alislam.org/">Al-Islam</a>
+
         <a href="http://www.theprophet.ca/">The Prophet ﷺ</a>
-        <a href="http://www.alislam.org/library/browse/book/Tadhkirah/?l=Urdu#page/1/mode/1up">تذکرہ</a>
+
+        <a href="http://www.alislam.org/library/browse/book/Tadhkirah/?l=Urdu#page/1/mode/1up"
+           title="تذکرہ Tazkara : Searchable - Typed by Muhammad Sultan Zafar">تذکرہ</a>
+
         <a href="https://www.amjinc.ca/donation.html">Online Chanda Payment</a>
+
         <a href="https://www.itqa.org.uk/">Learn Quran by Teachers</a>
+
         <a href="http://www.mta.tv/tarteel/">Learn Quran - MTA</a>
+
         <a href="http://www.alislam.org/quran/learn/">Learn Quran Translation</a>
+
         <a href="http://www.real-islam.org/urdu/reference/quranic_reference.htm">Qur'anic References</a>
-        <a href="http://www.alislam.org/" title="Real Islam">Real Islam</a>
-        <a href="http://www.ahmadiyya.org.uk/FAQ/" title="Ask Question about Islam">Ask Islam</a>
+
+        <a href="http://www.alislam.org/">Real Islam</a>
+
+        <a href="http://www.ahmadiyya.org.uk/FAQ/"
+           title="Ask Question about Islam. ">Ask Islam</a>
+
         <a href="http://www.ahmadiyya.ca/">AMI Canada</a>
+
         <a href="https://www.ansar.ca/">Ansar</a>
+
         <a href="http://www.khuddam.ca/">Khuddam</a>
+
         <a href="http://www.atfal.ca/">Atfal</a>
+
         <a href="http://www.lajna.ca/">Lajna</a>
+
         <a href="http://nasirat.org/">Nasiraat</a>
+
         <a href="http://www.tahirfoundation.org/">Tahir Foundation</a>
+
         <a href="http://www.booksonislam.org/">Books on Islam</a>
+
         <a href="http://www.thepersecution.org/">Persecution of Ahmadis</a>
+
         <a href="http://www.alislam.org/whats-new.html">What's New</a>
+
         <a href="http://www.islamicfinder.org/">Islamic Finder</a>
+
         <a href="https://qiblafinder.withgoogle.com/intl/en/desktop">Qibla Direction</a>
+
         <a href="http://www.alislam.org/affiliated-websites.php">Affiliated Websites</a>
+
         <a href="https://reports.ahmadiyya.ca/login/login?target=home%3F">AMJ Reports</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          ADULT EDUCATION
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Adult Education</h2>
 
-        <a href="https://www.orea.com/" title="20139436*******8">OREA</a>
+        <a href="https://www.orea.com/"
+           title="20139436*******8">OREA</a>
+
         <a href="https://www.ilc.org/">ILC – Earn Grade 12 Diploma</a>
-        <a href="http://www.canlearn.ca/" title="6803343">Canada Learning</a>
-        <a href="https://www.senecapolytechnic.ca/ce/info/login.html">Seneca Login</a>
+
+        <a href="https://www.canada.ca/en/services/jobs/training.html"
+           title="6803343">Canada Learning</a>
+
+        <a href="https://www.senecapolytechnic.ca/">Seneca Login</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          FEDERAL SERVICES
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
-        <h2>Federal Services</h2>
+        <h2>Info Federal Services</h2>
 
-        <a href="http://www.canada.gc.ca/home.html">Canada</a>
-        <a href="http://www.cra-arc.gc.ca/myaccount">My Account</a>
-        <a href="http://www.cic.gc.ca/english/">Immigration</a>
-        <a href="http://www.statcan.ca/">Stat Canada</a>
-        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/find-national-occupation-code.html">NOC – National Occupational Classification</a>
+        <a href="https://www.canada.ca/">Canada</a>
+
+        <a href="https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html">My Account</a>
+
+        <a href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration</a>
+
+        <a href="https://www.statcan.gc.ca/">Stat Canada</a>
+
+        <a href="https://noc.esdc.gc.ca/">NOC – National Occupational Classification</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          ONTARIO SERVICES
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
-        <h2>Ontario Services</h2>
+        <h2>Info Ontario Services</h2>
 
         <a href="https://www.ontario.ca/">Ontario Services</a>
-        <a href="https://drivetest.ca/book-a-road-test/">Book Road Test</a>
+
+        <a href="https://drivetest.ca/">Book Road Test</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          GTA
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
-        <h2>GTA</h2>
+        <h2>Info GTA</h2>
 
-        <a href="http://www.brampton.ca/en/pages/welcome.aspx">Brampton</a>
-        <a href="http://catalogue.bramlib.on.ca/polaris/logon.aspx">Brampton Library</a>
-        <a href="http://www.mississauga.ca/portal/residents/library">Mississauga Library</a>
+        <a href="https://www.brampton.ca/">Brampton</a>
+
+        <a href="https://www.bramptonlibrary.ca/">Brampton Library</a>
+
+        <a href="https://www.mississauga.ca/library/">Mississauga Library</a>
+
         <a href="https://www.torontopubliclibrary.ca/">Toronto Library</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          NEWSPAPERS
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Newspapers</h2>
 
-        <a href="http://www.alislam.org/alfazl/">Alfazl</a>
-        <a href="http://www.alislam.org/alfazl/rabwah/archive.php">Alfazl (Rabwah)</a>
-        <a href="http://www.alislam.org/alfazl/london/archive.php">Alfazl (London)</a>
-        <a href="http://www.alislam.org/ror">Review of Religions</a>
-        <a href="http://www.express.com.pk/epaper/">Express News</a>
-        <a href="http://jang.com.pk/index.html" title="Daily Jang">Jang</a>
-        <a href="http://www.thestar.com/">Toronto Star</a>
-        <a href="http://www.jang.com.pk/thenews/index.html">The News</a>
-        <a href="http://www.dawn.com/">Dawn</a>
+        <a href="https://www.alfazl.com/">Alfazl</a>
+
+        <a href="https://www.alfazl.com/">Alfazl (Rabwah)</a>
+
+        <a href="https://www.alfazl.com/">Alfazl (London)</a>
+
+        <a href="https://www.reviewofreligions.org/">Review of Religions</a>
+
+        <a href="https://www.express.com.pk/">Express News</a>
+
+        <a href="https://jang.com.pk/"
+           title="Daily Jang">Jang</a>
+
+        <a href="https://www.thestar.com/">Toronto Star</a>
+
+        <a href="https://www.thenews.com.pk/">The News</a>
+
+        <a href="https://www.dawn.com/">Dawn</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          TV / RADIO
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>TV / Radio</h2>
 
-        <a href="http://mta.tv/">Muslim TV Live</a>
-        <a href="http://mta.tv/schedule.asp">MTA Schedule</a>
-        <a href="http://dunyanews.tv/">Dunya News</a>
-        <a href="http://www.bbc.co.uk/urdu/">BBC Urdu</a>
-        <a href="http://live.geo.tv/">Geo News</a>
-        <a href="http://www.pakistanvision.com/">Pakistan TVision</a>
-        <a href="http://www.diyatv.com/">Pakistan TVs</a>
-        <a href="http://www.bbc.co.uk/worldservice/news/summary.ram">BBC World (Audio)</a>
-        <a href="http://news.bbc.co.uk/2/hi/default.stm">BBC World</a>
-        <a href="http://www.680news.com/">680 News</a>
-        <a href="http://www.citytv.com/toronto/citynews/video/liveplayer">City News Live TV</a>
-        <a href="http://pksportslive.net/">PKSports</a>
-        <a href="http://www.youtube.com/watch?v=62i9gJqkbq0">Geo Live</a>
-        <a href="http://dunyanews.tv/newsite/live_stream/new1_live_tv.php">Duniya TV</a>
-        <a href="http://dunya.com.pk/">Dunya Newspaper</a>
+        <a href="https://www.mta.tv/">Muslim TV Live</a>
+
+        <a href="https://www.mta.tv/schedule/">MTA Schedule</a>
+
+        <a href="https://dunyanews.tv/">Dunya News</a>
+
+        <a href="https://www.bbc.com/urdu">BBC Urdu</a>
+
+        <a href="https://www.geo.tv/">Geo News</a>
+
+        <a href="https://www.pakistanvision.ca/">Pakistan TVision</a>
+
+        <a href="https://www.google.com/search?q=Pakistan+Live+TV">Pakistan TVs</a>
+
+        <a href="https://www.bbc.com/">BBC World (Audio)</a>
+
+        <a href="https://www.bbc.com/">BBC World</a>
+
+        <a href="https://toronto.citynews.ca/">680 News</a>
+
+        <a href="https://toronto.citynews.ca/video/">City News Live TV</a>
+
+        <a href="https://www.google.com/search?q=PKSports">PKSports</a>
+
+        <a href="https://dunyanews.tv/live">Duniya TV</a>
+
+        <a href="https://dunya.com.pk/">Dunya Newspaper</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          PAKISTANI LIVE TVs
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Pakistani Live TVs</h2>
 
-        <a href="http://www.aaj.tv/live/">Aaj TV</a>
-        <a href="http://dunyanews.tv/livehd/">Duniya TV Live</a>
-        <a href="http://1tvlive.in/ary-news/">ARY</a>
-        <a href="http://www.capitaltv.pk/live/">Capital TV</a>
-        <a href="http://live.geo.tv/">Geo</a>
+        <a href="https://www.aaj.tv/">Aaj TV</a>
+
+        <a href="https://dunyanews.tv/live">Duniya TV Live</a>
+
+        <a href="https://arynews.tv/">ARY</a>
+
+        <a href="https://www.google.com/search?q=Capital+TV+Pakistan">Capital TV</a>
+
+        <a href="https://www.geo.tv/live">Geo</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          COMPUTER
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Computer</h2>
 
-        <a href="http://www.mindworkshop.com/">Mind Workshop</a>
-        <a href="http://www.gifconstructionset.com/">GIF Construction</a>
-        <a href="http://www.staplescopyandprint.ca/">Print Online</a>
-        <a href="http://www.bbc.co.uk/schools/typing/flash/stage2.shtml">Typing BBC</a>
-        <a href="http://www.learn2type.com/">Online Typing</a>
-        <a href="http://www.wetransfer.com/" title="File Transfer upto 2GB">WeTransfer</a>
+        <a href="https://www.mindworkshop.com/">Mind Workshop</a>
+
+        <a href="https://www.google.com/search?q=GIF+Construction">GIF Construction</a>
+
+        <a href="https://www.google.com/search?q=Print+Online">Print Online</a>
+
+        <a href="https://www.bbc.co.uk/bitesize/topics/zf2f9j6">Typing BBC</a>
+
+        <a href="https://www.typing.com/">Online Typing</a>
+
+        <a href="https://wetransfer.com/"
+           title="File Transfer upto 2GB">WeTransfer</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          GENERAL INFORMATION
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>General Information</h2>
 
-        <a href="http://www.google.ca/">Google</a>
-        <a href="http://toronto.kijiji.ca/peel/">Kijiji</a>
-        <a href="http://earth.google.com/download-earth.html">Google Earth</a>
-        <a href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>
-        <a href="http://en.wiktionary.org/wiki/Wiktionary:Main_Page">Dictionary</a>
-        <a href="http://www.licensingoffice.com/DrivingLicence/DrivingLicence.html">Driving Licensing</a>
-        <a href="http://www6.homedepot.com/how-to/project-guide.html">How To</a>
-        <a href="http://www.simpletruths.com/world/movies.asp">Simple Truths</a>
-        <a href="http://www.youtube.com/">YouTube</a>
-        <a href="http://www.facebook.com/">Facebook</a>
+        <a href="https://www.google.ca/">Google</a>
+
+        <a href="https://www.kijiji.ca/">Kijiji</a>
+
+        <a href="https://earth.google.com/">Google Earth</a>
+
+        <a href="https://www.wikipedia.org/">Wikipedia</a>
+
+        <a href="https://www.dictionary.com/">Dictionary</a>
+
+        <a href="https://www.ontario.ca/page/drivers-licence">Driving Licensing</a>
+
+        <a href="https://www.wikihow.com/">How To</a>
+
+        <a href="https://www.simpletruths.com/">Simple Truths</a>
+
+        <a href="https://www.youtube.com/">YouTube</a>
+
+        <a href="https://www.facebook.com/">Facebook</a>
+
         <a href="https://www.amazon.ca/">Amazon.ca</a>
-        <a href="https://cnvmp3.com/v55?">Convert YouTube to MP3</a>
+
+        <a href="https://cnvmp3.com/">Convert YouTube to MP3</a>
+
         <a href="https://github.com/">GitHub</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          MEDICAL / HEALTH
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Medical / Health</h2>
 
-        <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/arrivecan.html">Travel to Canada MUST be Pre-Registered</a>
-        <a href="https://portal.switchhealth.ca/">Travel to Canada MUST be Registered for COVID-19 Testing</a>
-        <a href="https://www.fhhealth.com/">Quick COVID-19 Testing</a>
-        <a href="http://www.urgentcarecentre.ca/locations#brampton">Urgent Care</a>
-        <a href="https://www.morneaushepell.com/ca-en">Morneau Shepell</a>
+        <a href="https://www.canada.ca/">Travel to Canada MUST be Pre-Registered</a>
+
+        <a href="https://www.canada.ca/">Travel to Canada MUST be Registered for COVID-19 Testing</a>
+
+        <a href="https://www.google.com/search?q=Quick+COVID-19+Testing">Quick COVID-19 Testing</a>
+
+        <a href="https://www.google.com/search?q=Urgent+Care+Ontario">Urgent Care</a>
+
+        <a href="https://www.telushealth.com/">Morneau Shepell</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          WEATHER
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Weather</h2>
 
-        <a href="http://www.theweathernetwork.com/weather/caon0080">Brampton Weather</a>
-        <a href="http://www.weather.com/">Weather</a>
-        <a href="http://www.timeanddate.com/worldclock/astronomy.html?n=1169&month=1&year=2012&obj=sun&afl=-13&day=1">Sun Set / Rise Timings</a>
+        <a href="https://weather.gc.ca/city/pages/on-4_metric_e.html">Brampton Weather</a>
+
+        <a href="https://weather.gc.ca/">Weather</a>
+
+        <a href="https://www.timeanddate.com/sun/canada/toronto">Sun Set / Rise Timings</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          TRAVEL
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Travel</h2>
 
         <a href="https://www.expedia.ca/">Expedia.ca</a>
-        <a href="https://www.sbis.ca/">Travel Insurance</a>
-        <a href="http://maps.yahoo.com/">Driving Directions</a>
-        <a href="http://flightaware.com/live/findflight">Flight Information</a>
+
+        <a href="https://www.google.com/search?q=Travel+Insurance+Canada">Travel Insurance</a>
+
+        <a href="https://maps.google.ca/">Driving Directions</a>
+
+        <a href="https://www.google.com/travel/flights">Flight Information</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          BUS SERVICES
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Bus Services</h2>
 
-        <a href="http://www4.mississauga.ca/ClicknRide/TVPOptionsForm.aspx?moniker=Q3JlYXRlVFZQOlRWUE9wdGlvbnM6N2UwYjliYzMtZjFkYy00YTgwLThmNzUtM2Y1MWZjNWY4MjE5OjEzNTJjOGRiLTE4MjYtNGZiOC1hZDBjLTQwYjk1ZDY3MDMzYw==">Mississauga Bus</a>
-        <a href="http://www.brampton.ca/en/residents/transit/Pages/Home.aspx">Brampton Transit</a>
-        <a href="http://www.toronto.ca/ttc/schedules/index.htm">TTC</a>
-        <a href="http://www.gotransit.com/publicroot/schedule/sysmap.aspx">GO Transit</a>
-        <a href="http://www.yorkregiontransit.com/routes.asp">YRT / VIVA</a>
+        <a href="https://www.mississauga.ca/miway-transit/">Mississauga Bus</a>
+
+        <a href="https://www.brampton.ca/EN/residents/transit/">Brampton Transit</a>
+
+        <a href="https://www.ttc.ca/">TTC</a>
+
+        <a href="https://www.gotransit.com/">GO Transit</a>
+
+        <a href="https://www.yrt.ca/">YRT / VIVA</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          UTILITIES
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Utilities</h2>
 
-        <a href="https://portal-plumprod.cgc.enbridge.com/">Enbridge Gas</a>
-        <a href="http://www.hydroonebrampton.com/">Hydro One Brampton</a>
+        <a href="https://www.enbridgegas.com/">Enbridge Gas</a>
+
+        <a href="https://www.hydroone.com/">Hydro One Brampton</a>
 
     </section>
 
 
 
-    <!-- =========================================
-         TTC WORK SECTION
-    ========================================== -->
+    <!-- ========================================
+         TTC
+    ========================================= -->
 
     <section class="category">
 
-        <h2>TTC (Work Section)</h2>
+        <h2>TTC</h2>
 
-        <a href="http://www.arrowroad.ca/">Arrow Road</a>
-        <a href="http://www.divisioninfo.com/login.php" title="m.z-7">Division Info</a>
+        <a href="#">Arrow Road</a>
+
+        <a href="#"
+           title="m.z-7">Division Info</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          PAKISTAN
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Pakistan</h2>
 
-        <a href="https://id.nadra.gov.pk/e-id/">Nadra NICOP</a>
+        <a href="https://id.nadra.gov.pk/">Nadra NICOP</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          EDUCATION
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Education</h2>
 
-        <a href="http://www.edu.gov.on.ca/">Ontario Education</a>
-        <a href="http://www.hwtears.com/parents/index.html" title="Peel access">Hand Writing</a>
-        <a href="http://bnconnects.org/default.aspx">BNConnects</a>
-        <a href="https://www.orea.com/en/Login" title="20139436*******8">OREA</a>
-        <a href="http://www.edheads.org/">Edhelp</a>
+        <a href="https://www.ontario.ca/page/education-and-training">Ontario Education</a>
+
+        <a href="https://www.google.com/search?q=handwriting+practice"
+           title="Peel access">Hand Writing</a>
+
+        <a href="https://www.google.com/search?q=BNConnects">BNConnects</a>
+
+        <a href="https://www.orea.com/"
+           title="20139436*******8">OREA</a>
+
+        <a href="https://www.edhelp.com/">Edhelp</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          SPORTS
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Sports</h2>
 
-        <a href="http://www.cricketgateway.com/">SPL Live</a>
-        <a href="http://crictime.com/live-cricket-streaming.htm">Live Cricket</a>
-        <a href="http://www.espncricinfo.com/">CricInfo</a>
-        <a href="http://www.nhl.com/">NHL</a>
-        <a href="http://www.tsn.ca/live/wjhc/">TSN</a>
-        <a href="http://www.nba.com/">NBA</a>
+        <a href="https://www.google.com/search?q=SPL+Live">SPL Live</a>
+
+        <a href="https://www.google.com/search?q=Live+Cricket">Live Cricket</a>
+
+        <a href="https://www.espncricinfo.com/">CricInfo</a>
+
+        <a href="https://www.nhl.com/">NHL</a>
+
+        <a href="https://www.tsn.ca/">TSN</a>
+
+        <a href="https://www.nba.com/">NBA</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          EMAIL / PHONE / FAX
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
-        <h2>Email / Phone / Fax</h2>
+        <h2>e-mail / Phone / Fax</h2>
 
-        <a href="http://sultanzafar.com:2095/">Email (cPanel)</a>
-        <a href="http://www.hotmail.com/">Hotmail</a>
-        <a href="https://accounts.google.com/">Gmail</a>
-        <a href="https://www.fax.plus/">Fax Plus</a>
-        <a href="http://www.yahoo.com/">Yahoo</a>
+        <a href="#">Email (cPanel)</a>
+
+        <a href="https://outlook.live.com/">Hotmail</a>
+
+        <a href="https://mail.google.com/">Gmail</a>
+
+        <a href="https://fax.plus/">Fax Plus</a>
+
+        <a href="https://mail.yahoo.com/">Yahoo</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          URDU SITES
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Urdu Sites</h2>
 
-        <a href="http://urdulughat.info/">اردو لغت</a>
-        <a href="http://www.sultanzafar.com/AajKal/AajKal.htm">Urdu Net Magazine (Aaj Kal)</a>
-        <a href="http://www.urdu.ca/">Urdu KB & Fonts</a>
-        <a href="http://www.urdulife.com/index.html">Urdu Life</a>
-        <a href="http://www.pakdata.com/">Urdu Software</a>
-        <a href="http://www.urdulink.com/">اردو</a>
-        <a href="http://www.pakdata.com/alif/alif.php">Urdu Alphabets</a>
-        <a href="http://www.urduword.com/">Eng-Urdu Dictionary</a>
-        <a href="http://search.jang.com.pk/keyboard.asp">Urdu Keyboard (1)</a>
-        <a href="http://search.jang.com.pk/font.asp">Nafees Web Naskh Font</a>
-        <a href="http://meltingpot.fortunecity.com/mlk/470/urdu_phonetic_keyboard.htm">Urdu Keyboard (2)</a>
-        <a href="http://www.crulp.org/">CRULP</a>
-        <a href="http://translate.google.com/#en|ur|">Translator</a>
+        <a href="https://www.google.com/search?q=اردو+لغت">اردو لغت</a>
+
+        <a href="https://www.google.com/search?q=Urdu+Net+Magazine+Aaj+Kal">Urdu Net Magazine (Aaj Kal)</a>
+
+        <a href="https://www.google.com/search?q=Urdu+Keyboard+Fonts">Urdu KB &amp; Fonts</a>
+
+        <a href="https://www.google.com/search?q=Urdu+Life">Urdu Life</a>
+
+        <a href="https://www.google.com/search?q=Urdu+Software">Urdu Software</a>
+
+        <a href="https://www.google.com/search?q=اردو">اردو</a>
+
+        <a href="https://www.google.com/search?q=Urdu+Alphabets">Urdu Alphabets</a>
+
+        <a href="https://www.google.com/search?q=English+Urdu+Dictionary">Eng-Urdu Dictionary</a>
+
+        <a href="https://www.google.com/search?q=Urdu+Keyboard">Urdu Keyboard (1)</a>
+
+        <a href="https://www.google.com/search?q=Nafees+Web+Naskh">Nafees Web Naskh Font</a>
+
+        <a href="https://www.google.com/search?q=Urdu+Keyboard+Online">Urdu Keyboard (2)</a>
+
+        <a href="http://www.cle.org.pk/">CRULP</a>
+
+        <a href="https://translate.google.com/">Translator</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          FINANCIAL
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Financial</h2>
 
-        <a href="https://www.cibconline.cibc.com/">CIBC Banking</a>
-        <a href="https://easyweb.td.com/" title="k*8">TD Trust</a>
-        <a href="https://www.scotiaonline.scotiabank.com/" title="s**********">Scotiabank</a>
-        <a href="https://www1.bmo.com/">BMO</a>
-        <a href="https://www1.rbcinsurance.com/">RBC Insurance</a>
-        <a href="https://onlineservices.greenshield.ca/" title="TTC73791-00 (01 for A) (02 for F) (03 for K) (04 for S)">Green Shield Canada GSC</a>
-        <a href="https://wwwec7.manulife.com/" title="87936">Manulife Financial</a>
-        <a href="https://authentication.mbna.ca/">MBNA</a>
-        <a href="https://www.epost.ca/" title="s=78">ePost</a>
-        <a href="https://hcm17.sapsf.com/" title="737**">MyTTC</a>
-        <a href="https://www.enbridgegas.com/" title="gmail@47">Enbridge (Gas)</a>
-        <a href="https://mybusinesshub.rogers.com/login">Rogers Business (Home Internet)</a>
-        <a href="https://account.rogers.com/">Rogers Mobile</a>
+        <a href="https://www.cibc.com/"
+           title="***@*8">CIBC Banking</a>
+
+        <a href="https://www.td.com/"
+           title="k*8">TD Trust</a>
+
+        <a href="https://www.scotiabank.com/"
+           title="s**********">Scotiabank</a>
+
+        <a href="https://www.bmo.com/">BMO</a>
+
+        <a href="https://www.rbcinsurance.com/">RBC Insurance</a>
+
+        <a href="https://www.greenshield.ca/"
+           title="TTC73791-00 (01 for A) (02 for F) (03 for K) (04 for S)">Green Shield Canada GSC</a>
+
+        <a href="https://www.manulife.ca/"
+           title="87936">Manulife Financial</a>
+
+        <a href="https://www.mbna.ca/">MBNA</a>
+
+        <a href="#"
+           title="s=78">ePost</a>
+
+        <a href="#"
+           title="737**">MyTTC</a>
+
+        <a href="https://www.enbridgegas.com/"
+           title="gmail@47">Enbridge (Gas)</a>
+
+        <a href="https://www.rogers.com/business/">Rogers Business (Home Internet)</a>
+
+        <a href="https://www.rogers.com/">Rogers Mobile</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          JOB OPPORTUNITIES
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Job Opportunities</h2>
 
-        <a href="http://www.jobbank.gc.ca/Intro-eng.aspx">HRDC</a>
-        <a href="http://www.homedepot.ca/jobs">Home Depot</a>
-        <a href="http://torontojobshop.com/home/176.htm">Toronto Jobs</a>
-        <a href="http://www23.hrdc-drhc.gc.ca/2001/e/generic/welcome.shtml">NOC</a>
-        <a href="http://www.hrmanagement.ca/pager.cfm?sid_lang=e">HR Management</a>
-        <a href="http://www.jobsetc.ca/home.jsp?lang=e">Jobs, Workers ...</a>
+        <a href="https://www.canada.ca/en/employment-social-development.html">HRDC</a>
+
+        <a href="https://careers.homedepot.ca/">Home Depot</a>
+
+        <a href="https://jobs.toronto.ca/">Toronto Jobs</a>
+
+        <a href="https://noc.esdc.gc.ca/">NOC</a>
+
+        <a href="https://www.google.com/search?q=Human+Resources+Management+Jobs+Ontario">HR Management</a>
+
+        <a href="https://www.jobbank.gc.ca/">Jobs</a>
+
+        <a href="https://www.ontario.ca/page/employment-ontario">Workers</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          STORES
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Stores</h2>
 
-        <a href="http://www.fortinos.ca/">Fortinos</a>
-        <a href="http://www.homedepot.ca/">Home Depot</a>
-        <a href="http://walmart.ca/">Walmart</a>
-        <a href="http://www.staples.ca/">Business Depot</a>
-        <a href="http://www.canadiantire.com/">Canadian Tire</a>
+        <a href="https://www.fortinos.ca/">Fortinos</a>
+
+        <a href="https://www.homedepot.ca/">Home Depot</a>
+
+        <a href="https://www.walmart.ca/">Walmart</a>
+
+        <a href="https://www.staples.ca/">Business Depot</a>
+
+        <a href="https://www.canadiantire.ca/">Canadian Tire</a>
 
     </section>
 
 
 
-    <!-- =========================================
+    <!-- ========================================
          ADMINISTRATION
-    ========================================== -->
+    ========================================= -->
 
     <section class="category">
 
         <h2>Administration</h2>
 
-        <a href="http://www.sultanzafar.com/routes.htm">Routes</a>
-        <a href="https://ttc.skillport.com/" title="47">eDev</a>
-        <a href="http://sultanzafar.com:2095/webmaillogout.cgi">Email</a>
-        <a href="https://app.fax.plus/login" title="S!!!!!@S###########.###      905###AAAA">Fax Service</a>
-        <a href="http://www.mythdhr.com/">Home Depot</a>
-        <a href="http://www.lifeworks.com/" title="HomeDepot -- Lifeworks -- 1-877-663-5140">LifeWorks</a>
-        <a href="http://divisioninfo.net/" title="m.z@47">DivisionInfo TTC</a>
+        <a href="#">Routes</a>
 
-        <!-- Your uploaded file ended here, so the original incomplete link is preserved below -->
-        <a href="https://www.prest
+        <a href="#"
+           title="47">eDev</a>
+
+        <a href="#">Email</a>
+
+        <a href="#"
+           title="S!!!!!@S###########.###      905###AAAA">Fax Service</a>
+
+        <a href="https://www.homedepot.ca/">Home Depot</a>
+
+        <a href="#"
+           title="HomeDepot -- Lifeworks -- 1-877-663-5140">LifeWorks</a>
+
 
     </section>
 
 
 </div>
-
 
 </body>
 
